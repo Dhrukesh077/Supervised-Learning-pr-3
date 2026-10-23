@@ -1,0 +1,241 @@
+{
+  "model_name": "Logistic Regression (baseline)",
+  "trained_at_utc": "2026-10-23 06:15",
+  "sklearn_version": "1.8.0",
+  "threshold": 0.18,
+  "metrics": {
+    "accuracy": 0.9978260869565218,
+    "precision": 0.9823008849557522,
+    "recall": 1.0,
+    "f1": 0.9910714285714286,
+    "roc_auc": 1.0,
+    "tn": 807,
+    "fp": 2,
+    "fn": 0,
+    "tp": 111
+  },
+  "roc": {
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.009009009009009009,
+      1.0,
+      1.0
+    ]
+  },
+  "importance_kind": "|standardised coefficient|",
+  "feature_importance": [
+    {
+      "feature": "credit_utilization_ratio",
+      "importance": 1.8460265879960305
+    },
+    {
+      "feature": "avg_late_payment_days",
+      "importance": 1.84080323647704
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "importance": 1.6095115467270056
+    },
+    {
+      "feature": "annual_income_inr",
+      "importance": 1.5124591142583552
+    },
+    {
+      "feature": "missed_payments_12m",
+      "importance": 1.3451025512328707
+    },
+    {
+      "feature": "failed_login_attempts_3m",
+      "importance": 1.2241200001986077
+    },
+    {
+      "feature": "credit_score",
+      "importance": 1.1884445024608083
+    },
+    {
+      "feature": "cash_advance_count_6m",
+      "importance": 1.128219045830231
+    },
+    {
+      "feature": "complaints_last_6m",
+      "importance": 1.007031299507123
+    },
+    {
+      "feature": "region_Central",
+      "importance": 0.9216624605300854
+    },
+    {
+      "feature": "monthly_spend_inr",
+      "importance": 0.71670136502965
+    },
+    {
+      "feature": "employment_type_Unemployed",
+      "importance": 0.6602560843149327
+    },
+    {
+      "feature": "employment_type_Salaried",
+      "importance": 0.5477876493024912
+    },
+    {
+      "feature": "region_East",
+      "importance": 0.5415931120053312
+    },
+    {
+      "feature": "region_West",
+      "importance": 0.4498696521846922
+    },
+    {
+      "feature": "region_North",
+      "importance": 0.4428653051759363
+    },
+    {
+      "feature": "days_since_last_txn",
+      "importance": 0.3629538016957626
+    },
+    {
+      "feature": "region_South",
+      "importance": 0.347216904697979
+    },
+    {
+      "feature": "employment_type_Self-Employed",
+      "importance": 0.2692109586489558
+    },
+    {
+      "feature": "gender_Male",
+      "importance": 0.21470623526173516
+    },
+    {
+      "feature": "gender_Female",
+      "importance": 0.20624984281999298
+    },
+    {
+      "feature": "employment_type_Retired",
+      "importance": 0.17372863151714654
+    },
+    {
+      "feature": "monthly_transaction_count",
+      "importance": 0.10405797494345588
+    },
+    {
+      "feature": "debt_balance_inr",
+      "importance": 0.09813050651842385
+    },
+    {
+      "feature": "employment_type_Student",
+      "importance": 0.042834204698652
+    },
+    {
+      "feature": "age",
+      "importance": 0.03140461490931858
+    },
+    {
+      "feature": "account_tenure_months",
+      "importance": 0.02852149954005571
+    },
+    {
+      "feature": "gender_Other",
+      "importance": 0.017391704376276716
+    }
+  ],
+  "options": {
+    "gender": [
+      "Female",
+      "Male",
+      "Other"
+    ],
+    "region": [
+      "Central",
+      "East",
+      "North",
+      "South",
+      "West"
+    ],
+    "employment_type": [
+      "Retired",
+      "Salaried",
+      "Self-Employed",
+      "Student",
+      "Unemployed"
+    ]
+  },
+  "numeric_info": {
+    "age": {
+      "min": 18.0,
+      "max": 75.0,
+      "median": 36.0
+    },
+    "annual_income_inr": {
+      "min": 15000.0,
+      "max": 163002.0,
+      "median": 39315.5
+    },
+    "credit_score": {
+      "min": 440.0,
+      "max": 850.0,
+      "median": 681.0
+    },
+    "credit_utilization_ratio": {
+      "min": 0.002,
+      "max": 0.978,
+      "median": 0.3685
+    },
+    "missed_payments_12m": {
+      "min": 0.0,
+      "max": 10.0,
+      "median": 1.0
+    },
+    "avg_late_payment_days": {
+      "min": 0.1,
+      "max": 47.1,
+      "median": 3.9
+    },
+    "monthly_transaction_count": {
+      "min": 5.0,
+      "max": 153.0,
+      "median": 65.0
+    },
+    "monthly_spend_inr": {
+      "min": 3769.0,
+      "max": 87389.0,
+      "median": 19460.5
+    },
+    "cash_advance_count_6m": {
+      "min": 0.0,
+      "max": 7.0,
+      "median": 0.0
+    },
+    "complaints_last_6m": {
+      "min": 0.0,
+      "max": 7.0,
+      "median": 0.0
+    },
+    "failed_login_attempts_3m": {
+      "min": 0.0,
+      "max": 12.0,
+      "median": 2.0
+    },
+    "account_tenure_months": {
+      "min": 2.0,
+      "max": 180.0,
+      "median": 48.0
+    },
+    "debt_balance_inr": {
+      "min": 3791.0,
+      "max": 213601.0,
+      "median": 35862.0
+    }
+  },
+  "date_range": [
+    "2025-09-03",
+    "2025-12-01"
+  ],
+  "n_train": 3680,
+  "n_test": 920,
+  "high_risk_share_train": 0.12119565217391304
+}

@@ -1,0 +1,8 @@
+[theme]
+primaryColor = "#b71c1c"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f6f6f6"
+textColor = "#222222"
+
+[server]
+headless = true

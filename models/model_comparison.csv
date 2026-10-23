@@ -1,0 +1,11 @@
+Model,Train Acc,Accuracy,Precision,Recall (TPR),F1,ROC-AUC,FPR,FN (Type-II),FP (Type-I),TN,TP
+Logistic Regression (baseline),0.9967,1.0,1.0,1.0,1.0,1.0,0.0,0,0,809,111
+LR + Under-Sampling,0.9944,0.9967,0.9737,1.0,0.9867,1.0,0.0037,0,3,806,111
+LR + Over-Sampling,0.9963,0.9978,0.9823,1.0,0.9911,1.0,0.0025,0,2,807,111
+LR + SMOTE,0.9961,0.9978,0.9823,1.0,0.9911,1.0,0.0025,0,2,807,111
+LR + ADASYN,0.9963,0.9978,0.9823,1.0,0.9911,1.0,0.0025,0,2,807,111
+Decision Tree (default),1.0,0.9837,0.9286,0.9369,0.9327,0.9635,0.0099,7,8,801,104
+Random Forest (default),1.0,0.9978,1.0,0.982,0.9909,0.9999,0.0,2,0,809,109
+Decision Tree (tuned – RandomizedSearchCV),0.9891,0.9859,0.9623,0.9189,0.9401,0.985,0.0049,9,4,805,102
+Random Forest (tuned – RandomizedSearchCV),0.9976,0.9989,0.9911,1.0,0.9955,1.0,0.0012,0,1,808,111
+Random Forest (tuned – GridSearchCV),0.9976,0.9989,0.9911,1.0,0.9955,1.0,0.0012,0,1,808,111
